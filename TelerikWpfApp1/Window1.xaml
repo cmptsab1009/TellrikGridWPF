@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelerikWpfApp1"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="TelerikWpfApp1.Window1"
+        mc:Ignorable="d"
+        Title="Window1" Height="300" Width="300">
+    <Grid Margin="0,0,-178,-54">
+
+        <!--<telerik:RadGridView HorizontalAlignment="Left" Margin="28,34,0,0" Name="playersGrid" VerticalAlignment="Top" Height="258" Width="412"/>-->
+
+        <telerik:RadGridView x:Name="playersGrid" 
+                             FilterOperatorsLoading="playersGrid_FilterOperatorsLoading"                              
+                             AutoGenerateColumns="False"  >
+            <!--<telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" Header="Number" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding     }" Header="Name" />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Num1}" Header="Num1" />
+            </telerik:RadGridView.Columns>-->
+        </telerik:RadGridView>
+    </Grid>
+</Window>
